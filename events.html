@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Timeline</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      margin: 0;
+      background: #EADCF2; /* Lightly dark pink */
+    }
+
+    /* HEADER STYLING */
+    .portfolio-header {
+      background-color: #B798D4;
+      padding: 20px 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+      border: 1px solid #333;
+      padding: 5px 15px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #8B0000;
+      text-decoration: underline;
+    }
+
+    /* TIMELINE STYLING */
+    .timeline-container {
+      position: relative;
+      width: 100%;
+      margin: 60px auto;
+      max-width: 1000px;
+    }
+
+    .timeline-line {
+      height: 4px;
+      background: #136207;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .timeline-event {
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      z-index: 2;
+    }
+
+    .event {
+      position: relative;
+      width: 120px;
+      text-align: center;
+    }
+
+    .dot {
+      width: 14px;
+      height: 14px;
+      background: #136207;
+      border-radius: 50%;
+      margin: 10px auto;
+    }
+
+    .event.above {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      bottom: 80px;
+    }
+
+    .event.above .dot {
+      position: absolute;
+      top: 85%;
+      left: 50%;
+      transform: translate(-100%, -100%);
+      margin: 0;
+    }
+
+    .event.below {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: 80px;
+    }
+
+    .event .desc {
+      font-size: 0.9em;
+      color: #000;
+    }
+
+    .event .date {
+      font-weight: bold;
+      color: #001144;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔼 Header -->
+  <section class="portfolio-header">
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">MR. AKALYA & MRS. NAREN</a>
+      <div class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="events.html" class="active">TIMELINE</a>
+        <a href="links.html">LINKS</a>
+      </div>
+    </nav>
+  </section>
+
+  <!-- 🔽 Timeline Section -->
+  <h2>Their Journey Together 🧿</h2>
+  <br><br>
+
+  <div class="timeline-container">
+    <div class="timeline-line"></div>
+    <div class="timeline-event">
+
+      <div class="event above">
+        <div class="date">May 3, 2024</div>
+        <div class="desc">His Confession 💚</div>
+        <div class="dot"></div>
+      </div>
+
+      <div class="event below">
+        <div class="dot"></div>
+        <div class="date">July 8, 2024</div>
+        <div class="desc">Finally Official 💗</div>
+      </div>
+
+      <div class="event above">
+        <div class="date">November 20, 2024</div>
+        <div class="desc">First Kiss 🎀</div>
+        <div class="dot"></div>
+      </div>
+
+      <div class="event below">
+        <div class="dot"></div>
+        <div class="date">December 19, 2024</div>
+        <div class="desc">First Date 🫂</div>
+      </div>
+
+      <div class="event above">
+        <div class="date">December 22, 2024</div>
+        <div class="desc">He Slept On Her Shoulders ☺️</div>
+        <div class="dot"></div>
+      </div>
+
+      <div class="event below">
+        <div class="dot"></div>
+        <div class="date">December 26, 2024</div>
+        <div class="desc">She Laid On His Shoulders ☺️</div>
+      </div>
+
+      <div class="event above">
+        <div class="date">Feb 15, 2025</div>
+        <div class="desc">First Proper Date ❤️</div>
+        <div class="dot"></div>
+      </div>
+
+      <div class="event below">
+        <div class="dot"></div>
+        <div class="date">March 26, 2025</div>
+        <div class="desc">First Cheeks Kiss 🌚</div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
