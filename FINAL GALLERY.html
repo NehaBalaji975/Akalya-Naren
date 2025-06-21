@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery</title>
+  <style>
+    body {
+      font-family: times-new-roman;
+      margin: 0;
+      background-color: #F7CAC9; /* light pink */
+    }
+
+    /* Header Section */
+    .portfolio-header {
+      background-color: #B76E79; /* Rose gold */
+      padding: 20px 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+      border: 1px solid #333;
+      padding: 5px 15px;
+  
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #8B0000;
+      text-decoration: underline;
+    }
+
+    /* Gallery Section */
+    h2 {
+      text-align: center;
+      margin: 40px auto;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 67px;
+      justify-items: center;
+      max-width: 1000px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 300px;
+      max-width: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 1000px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <section class="portfolio-header">
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">MR. AKALYA & MRS. NAREN</a>
+      <div class="nav-links">
+        <a href="index-multipage.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="FINAL GALLERY.html" class="active">GALLERY</a>
+        <a href="FINAL EVENTS.html">TIMELINE</a>
+        <a href="FINAL LINKS.html">LINKS</a>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Gallery Title -->
+  <h2>Memories Of Togetherness 🧿</h2>
+
+  <!-- Gallery Grid -->
+  <div class="gallery-grid">
+    <img src="img/gallery/photo1.jpg" alt="Memory 1">
+    <img src="img/gallery/photo2.jpg" alt="Memory 2">
+    <img src="img/gallery/photo3.jpg" alt="Memory 3">
+    <img src="img/gallery/photo4.jpg" alt="Memory 4">
+    <img src="img/gallery/photo5.jpg" alt="Memory 5">
+    <img src="img/gallery/photo6.jpg" alt="Memory 6">
+  </div>
+
+</body>
+</html>
