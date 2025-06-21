@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MR. AKALYA AND MRS. NAREN</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('assets/images/cover.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    /* Dark overlay */
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    /* Hero content */
+    .hero-text {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      letter-spacing: 8px;
+      font-weight: 300;
+    }
+
+    .hero-text p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      font-weight: 200;
+    }
+
+    /* Navigation */
+    nav {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      z-index: 2;
+    }
+
+    nav a {
+      color: #2d9cdb;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+  <a href="index.html">HOME</a>
+  <a href="about.html">ABOUT US</a>
+  <a href="gallery.html">GALLERY</a>
+  <a href="events.html">TIMELINE</a>
+  <a href="links.html">LINKS</a>
+</nav>
+
+    <div class="hero-text">
+      <h1>MR. AKALYA 💗🧿 MRS. NAREN</h1>
+      <p>COMMITTED SINCE JULY 8, 2024 ❤️</p>
+    </div>
+  </header>
+
+</body>
+</html>
